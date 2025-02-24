@@ -1,4 +1,7 @@
 
+let humanScore = 0;
+let computerScore = 0 ;
+
 function getComputerChoice(){
     const Computer_Choice = Math.floor(Math.random() * 3);
     if (Computer_Choice===0){
