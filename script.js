@@ -31,3 +31,41 @@ function getHumanChoice(){
         return "Scissors";
     }
 }
+
+function playRound(Human_Choice, Computer_Choice){
+
+    if (Human_Choice == "Scissors" && Computer_Choice == "Paper"){
+        humanScore++
+        return `You Won ! ${Human_Choice} beats ${Computer_Choice}`;
+    }
+
+    else if  (Human_Choice == "Scissors" && Computer_Choice == "Rock"){
+        computerScore++
+        return `You lost ! ${Computer_Choice} beats ${Human_Choice}`;
+    }
+
+    else if  (Human_Choice == "Paper" && Computer_Choice == "Rock"){
+        humanScore++
+        return `You Won ! ${Human_Choice} beats ${Computer_Choice}`;
+    }
+
+    else if  (Human_Choice == "Paper" && Computer_Choice == "Scissors"){
+        computerScore++
+        return `You lost ! ${Computer_Choice} beats ${Human_Choice}`;
+    }
+
+    else if  (Human_Choice == "Rock" && Computer_Choice == "Scissors"){
+        humanScore++
+        return `You Won ! ${Human_Choice} beats ${Computer_Choice}`;
+    }
+
+    else if  (Human_Choice == "Rock" && Computer_Choice == "Paper"){
+        computerScore++
+        return `You lost ! ${Computer_Choice} beats ${Human_Choice}`;
+    }
+
+    else {
+        return `Damn it  is a tight i will get you next round `;
+    }
+
+}
