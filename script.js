@@ -1,6 +1,6 @@
 
-let humanScore = 0;
-let computerScore = 0 ;
+let humanScore ;
+let computerScore ;
 
 function getComputerChoice(){
     const Computer_Choice = Math.floor(Math.random() * 3);
@@ -39,7 +39,8 @@ function playRound(Human_Choice, Computer_Choice){
         return `You Won ! ${Human_Choice} beats ${Computer_Choice}`;
     }
 
-    else if  (Human_Choice == "Scissors" && Computer_Choice == "Rock"){
+    else if 
+     (Human_Choice == "Scissors" && Computer_Choice == "Rock"){
         computerScore++
         return `You lost ! ${Computer_Choice} beats ${Human_Choice}`;
     }
@@ -69,3 +70,15 @@ function playRound(Human_Choice, Computer_Choice){
     }
 
 }
+function playGame(){
+
+    for (let i=0; i<5; i++){
+        humanScore = 0;
+        computerScore = 0;
+        let Human_Choice =getHumanChoice()
+        let Computer_Choice = getComputerChoice()
+        console.log(playRound(Human_Choice, Computer_Choice))
+
+    }  
+}
+playGame()
