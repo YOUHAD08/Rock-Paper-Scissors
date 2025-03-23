@@ -17,20 +17,7 @@ function getComputerChoice(){
     }
 }
 
-function getHumanChoice(){
-    const Human_Choice=window.prompt("what is your choise ? (pick one number) \n 1- Rock \n 2- Paper \n 3- Scissors");
-    if (Human_Choice==1){
-        return "Rock";
-    }
 
-    else if  (Human_Choice==2){
-        return "Paper";
-    }
-
-    else{
-        return "Scissors";
-    }
-}
 
 function playRound(Human_Choice, Computer_Choice){
 
@@ -68,17 +55,4 @@ function playRound(Human_Choice, Computer_Choice){
     else {
         return `Damn it  is a tight i will get you next round `;
     }
-
 }
-function playGame(){
-
-    for (let i=0; i<5; i++){
-        humanScore = 0;
-        computerScore = 0;
-        let Human_Choice =getHumanChoice()
-        let Computer_Choice = getComputerChoice()
-        console.log(playRound(Human_Choice, Computer_Choice))
-
-    }  
-}
-playGame()

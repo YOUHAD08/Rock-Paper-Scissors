@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    background: white;
+}
+.tablescore {
+    flex: 1;
+}
+.tablescore table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.tablescore th, .tablescore td {
+    border: 2px solid black;
+    padding: 10px;
+}
+.gameui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 2;
+}
+.players {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.player img {
+    width: 80px;
+    height: 80px;
+}
+.humain img:last-child, .robot img:first-child {
+    background-color: yellow;
+    border-radius: 50%;
+}
+.robot img:last-child {
+    background-color: pink;
+    border-radius: 50%;
+}
+.scoreboard {
+    font-size: 24px;
+    font-weight: bold;
+}
+.announcement {
+    font-size: 20px;
+    font-weight: bold;
+}
+.images{
+    display: flex;
+    gap: 60px;
+}
