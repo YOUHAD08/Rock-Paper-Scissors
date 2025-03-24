@@ -52,14 +52,6 @@ body {
     width: 80px;
     height: 80px;
 }
-.humain img:last-child, .robot img:first-child {
-    background-color: yellow;
-    border-radius: 50%;
-}
-.robot img:last-child {
-    background-color: pink;
-    border-radius: 50%;
-}
 .scoreboard {
     font-size: 24px;
     font-weight: bold;
@@ -72,3 +64,72 @@ body {
     display: flex;
     gap: 60px;
 }
+/* Basic modal styling */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.key-instructions {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.key-instructions li {
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 10px; /* Add space between list items */
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+}
+
+.key-instructions li b {
+    color: #3498db; /* Highlight the keys with a different color */
+    font-weight: bold;
+}
+
+.key-instructions li:nth-child(odd) {
+    background-color: #f0f8ff; /* Light blue background for odd items */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.key-instructions li:nth-child(even) {
+    background-color: #e9f7fc; /* Light cyan background for even items */
+    padding: 5px;
+    border-radius: 5px;
+}
+
